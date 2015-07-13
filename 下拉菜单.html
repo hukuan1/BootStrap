@@ -9,17 +9,37 @@
 	</head>
 	<body>
 		<div class="container">
+			<!--向下拉-->
 			<div class="dropdown">
-				<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
-				 data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" 
+				data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 					dropdown
+					<span class="caret"></span>
 				</button>
-				<span class="caret"></span>
-				<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-					<li><a href="#">Action1</a></li>
+				<ul class="dropdown-menu">
+					<li><a href="index.html">Action1</a></li>
 					<li><a href="#">Action2</a></li>
 					<li><a href="#">Action3</a></li>
 					<li><a href="#">Action4</a></li>
+				</ul>
+			</div><br /><br /><br /><br /><br /><br /><br /><br />
+			<!--向上拉-->
+			<div class="dropup">
+				<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+				data-toggle="dropdown">
+					dropup
+					<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu dropdown-menu-right">
+					<!--标题-->
+					<li><a class="dropdown-header">DropHeader</a></li>
+					<li><a href="#dropdownMenu1">Action5</a></li>
+					<!--禁用-->
+					<li class="disabled"><a href="#dropdownMenu1">Action6</a></li>
+					<li><a href="#dropdownMenu1">Action7</a></li>
+					<!--分隔线-->
+					<li class="divider"></li>
+					<li><a href="#dropdownMenu1">Action8</a></li>
 				</ul>
 			</div>
 		</div>
