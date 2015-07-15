@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="utf-8">
 		<title></title>
@@ -7,25 +8,65 @@
 		<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
 		<script src="js/bootstrap.js"></script>
 	</head>
+
 	<body>
-		<!--分裂式按钮下拉菜单-->
+		<!--单按钮下拉菜单-->
+		<h3><span class="badge">单按钮下拉菜单</span></h3>
 		<div class="btn-group">
-			<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">primary</button>
+			<button class="btn btn-primary btn-lg dropdown-toggle" type="button" data-toggle="dropdown">primary</button>
 			<button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">primary</button>
-			<button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">primary</button>
-			<button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown">primary</button>
+			<button class="btn btn-info btn-sm dropdown-toggle" type="button" data-toggle="dropdown">primary</button>
+			<button class="btn btn-warning btn-xs dropdown-toggle" type="button" data-toggle="dropdown">primary</button>
 			<div class="btn-group">
 				<button class="btn btn-danger dropdown-toggle" type="button" data-toggle="dropdown">
 					danger
-				<span class="caret"></span>
+					<span class="caret"></span>
 				</button>
 				<ul class="dropdown-menu">
-					<li><a href="#">1</a></li>
-					<li><a href="#">2</a></li>
+					<li><a href="#">1</a>
+					</li>
+					<li><a href="#">2</a>
+					</li>
 					<li class="divider"></li>
-					<li><a href="#">3</a></li>
+					<li><a href="#">3</a>
+					</li>
 				</ul>
 			</div>
 		</div>
-	</body>
+		<br />
+		<br />
+		<!--分裂式按钮下拉菜单-->
+		<h3><span class="badge">分裂式按钮下拉菜单</span></h3>
+		<div class="btn-group">
+			<button class="btn btn-danger">danger</button>
+			<button class="btn btn-danger dropdown-toggle" type="button" data-toggle="dropdown">
+				<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu">
+				<li><a href="#">1</a>
+				</li>
+				<li><a href="#">2</a>
+				</li>
+				<li class="divider"></li>
+				<li><a href="#">3</a>
+				</li>
+			</ul>
+		</div>
+		<!--分裂式按钮上拉菜单-->
+		<h3><span class="badge">分裂式按钮上拉菜单</span></h3>
+		<div class="btn-group dropup">
+			<button class="btn btn-primary">danger</button>
+			<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+				<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu">
+				<li><a href="#">1</a>
+				</li>
+				<li><a href="#">2</a>
+				</li>
+				<li class="divider"></li>
+				<li><a href="#">3</a>
+				</li>
+			</ul>
+		</div>
 </html>
