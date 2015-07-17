@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+	</head>
+	<body>
+		<span class="badge" name="name">导标签页</span>
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="#">Home</a></li>
+			<li><a href="#">One</a></li>
+			<li><a href="#">Two</a></li>
+		</ul>
+		<br /><br />
+		<span class="badge">代禁用垂直分裂胶囊式标签页</span>
+		<ul class="nav nav-pills nav-stacked">
+			<li class="active"><a href="#">Home</a></li>
+			<li><a href="#">One</a></li>
+			<li class="disabled"><a href="#">Two</a></li>
+		</ul>
+		<br /><br />
+		<span class="badge">带下拉菜单的胶囊式标签页</span>
+		<ul class="nav nav-pills nav-justified">
+			<li class="active"><a href="#">Home</a></li>
+			<li><a href="#">One</a></li>
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+					Down
+					<span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu">
+					<li><a href="#">two</a></li>
+					<li class="divider"></li>
+					<li><a href="#">three</a></li>
+				</ul>
+			</li>
+		</ul>
+	</body>
+</html>
